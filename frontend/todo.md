@@ -1,0 +1,70 @@
+TO DO:
+
+- Buscar backend de app parqueos
+- Realizar pantallas con datos quemados
+- Utilizar el menu que hice antes
+- Buscar Iconos
+- DB
+  - MODELOS
+    - Usuarios
+      - nombre
+      - password
+      - rol
+      - usuario
+      - estado
+    - Empleados
+      - nombres
+      - primer apellido
+      - segundo apellido
+      - fecha_nacimiento
+      - telefono
+      - correo
+      - imagen
+    - Sucursales
+      - Nombre
+      - Direccion
+      - Telefono
+    - Productos
+      - Nombre
+      - Descripcion
+      - Precio
+      - id_categoria
+      - disponibilidad
+      - imagen
+    - Pedidos
+      - Fecha
+      - Estado
+      - Total
+      - Metodo de pago
+      - Observaciones
+      - id_empleado
+      - metodo de entrega
+      - id_mesa
+    - Detalle Pedidos
+      - id_pedido
+      - id_producto
+      - cantidad
+      - Precio
+      - subtotal
+      - notas
+    - Mesas
+      - numero
+      - ubicacion
+      - Capacidad
+      - Estado
+      - Notas
+    - Categorias
+      - Nombre
+      - Descripcion
+  - RELACIONES
+    - Usuarios
+      - Empleados 1-1
+    - Empleados
+      - Sucursal 1-\*
+      - Mesas 1-\*
+    - Productos
+      - Pedidos 1-\*
+    - Pedidos
+      - Mesas 1-1
+    - Categorias
+      - Productos 1-1
